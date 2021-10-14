@@ -20,7 +20,7 @@ export default class MyCart extends React.Component {
                                 <h1 className='text-center mb-5 pt-3'>Your Carte</h1>
                                 <CarteColumns />
                                 <CarteList value={value} />
-                                <CartTotals value={value}/>
+                                <CartTotals value={value} history={this.props.history}/>
                             </React.Fragment>
                          )
                      }
